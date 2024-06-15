@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+cd proto
+rm -f *.proto
+wget -q --show-progress https://raw.githubusercontent.com/zuanet/zuad/master/infrastructure/network/netadapter/server/grpcserver/protowire/messages.proto
+wget -q --show-progress https://raw.githubusercontent.com/zuanet/zuad/master/infrastructure/network/netadapter/server/grpcserver/protowire/p2p.proto
+wget -q --show-progress https://raw.githubusercontent.com/zuanet/zuad/master/infrastructure/network/netadapter/server/grpcserver/protowire/rpc.proto
+# git --no-pager diff
+git status
